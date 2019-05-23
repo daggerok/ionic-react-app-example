@@ -6,13 +6,13 @@ ion-card {
   --background: white !important;
 }
 
-.bit-coin__header {
+.bitcoin__header {
   padding-top: 20px;
   --background: #222973;
   height: 180px;
 }
 
-.bit-coin__logo {
+.bitcoin__logo {
   width: 140px;
   height: 140px;
   display: block;
@@ -20,7 +20,7 @@ ion-card {
   color: white;
 }
 
-.bit-coin__disclaimer {
+.bitcoin__disclaimer {
   color: rgba(255, 255, 255, 0.75);
   text-align: center;
   padding: 6px;

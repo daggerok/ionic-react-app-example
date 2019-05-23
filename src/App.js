@@ -29,8 +29,7 @@ export default class App extends React.Component {
     );
   }
 
-  createBitCoinCards() {
-    const { bitcoinInfo } = this.state;
+  static createBitcoinCards(bitcoinInfo) {
     return Object.keys(bitcoinInfo.bpi)
       .map((item, index) =>
         <BitcoinCard key={index}
@@ -47,15 +46,15 @@ export default class App extends React.Component {
           </IonToolbar>
         </IonHeader>
         <IonContent>
-          <section className='bit-coin__header'>
-            <IonIcon name='logo-bitcoin' className='bit-coin__logo'/>
+          <section className='bitcoin__header'>
+            <IonIcon name='logo-bitcoin' className='bitcoin__logo'/>
           </section>
           {
             loading === true
               ? App.createLoadingCards()
-              : this.createBitCoinCards()
+              : App.createBitcoinCards(bitcoinInfo)
           }
-          <section className='bit-coin__disclaimer'>
+          <section className='bitcoin__disclaimer'>
             <p>{bitcoinInfo.disclaimer}</p>
           </section>
         </IonContent>
