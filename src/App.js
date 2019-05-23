@@ -55,7 +55,6 @@ export default class App extends React.Component {
               ? App.createLoadingCards()
               : this.createBitCoinCards()
           }
-
           <section className='bit-coin__disclaimer'>
             <p>{bitcoinInfo.disclaimer}</p>
           </section>
