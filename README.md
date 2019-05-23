@@ -9,6 +9,8 @@ npx serve build/
 
 open http://localhost:5000/ in your browser
 
+Inspired by [this](https://www.youtube.com/playlist?list=PLtKjv92L0ihBWO6NtZhXEsR9NXf7Uf_ki) series
+
 <!--
 
 ```bash
